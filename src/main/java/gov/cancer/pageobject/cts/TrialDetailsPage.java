@@ -55,7 +55,7 @@ public class TrialDetailsPage extends CTSPage {
   public TrialDetailsPage(String path) {
     super(path);
     resultListSection = new ResultListSection(ElementHelper.findElement(getBrowser(), "div.results-list"));
-    resultListSection.getAllResultsItems().get(0).getTitleLink().click();
+    resultListSection.getAllResultsItems().get(2).getTitleLink().click();
   }
 
   /**

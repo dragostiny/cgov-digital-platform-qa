@@ -18,7 +18,7 @@ public class LeadImage_Test extends TestObjectBase {
 
   /**
    * This method is checking if the Lead Image exists on the pages
-   * 
+   *
    * @param path
    *          Path of the page to check.
    */
@@ -36,7 +36,7 @@ public class LeadImage_Test extends TestObjectBase {
   /**
    * This method is checking if the Lead Image does not exist on the pages with
    * no lead image
-   * 
+   *
    * @param path
    *          Path of the page to check.
    */
@@ -53,7 +53,7 @@ public class LeadImage_Test extends TestObjectBase {
 
   /**
    * This method is checking if the correct caption is displayed with Lead Image
-   * 
+   *
    * @param path
    *          Path of the page to check.
    * @param caption
@@ -72,7 +72,7 @@ public class LeadImage_Test extends TestObjectBase {
 
   /**
    * This method is checking if the correct credit is displayed with Lead Image
-   * 
+   *
    * @param path
    *          Path of the page to check.
    * @param credit
@@ -92,7 +92,7 @@ public class LeadImage_Test extends TestObjectBase {
   /**
    * This method is checking if the correct alt text is displayed with Lead
    * Image
-   * 
+   *
    * @param path
    *          Path of the page to check.
    * @param alt
@@ -114,7 +114,7 @@ public class LeadImage_Test extends TestObjectBase {
 
   /**
    * Retrieves a list of paths to pages which are expected to have Lead Image
-   * 
+   *
    * @return An iterable list of 4 element arrays, each containing a path,
    *         caption, credit, and alt text.
    */
@@ -128,7 +128,7 @@ public class LeadImage_Test extends TestObjectBase {
   /**
    * Retrieves a list of paths to pages which are expected to have Lead Image
    * with Caption
-   * 
+   *
    * @return An iterable list of two element arrays, each containing a path and
    *         caption.
    */
@@ -142,7 +142,7 @@ public class LeadImage_Test extends TestObjectBase {
   /**
    * Retrieves a list of paths to pages which are expected to have Lead Image
    * with Alt text
-   * 
+   *
    * @return An iterable list of two element arrays, each containing a path and
    *         alt text.
    */
@@ -156,7 +156,7 @@ public class LeadImage_Test extends TestObjectBase {
   /**
    * Retrieves a list of paths to pages which are expected to have Lead Image
    * with Credit
-   * 
+   *
    * @return An iterable list of two element arrays, each containing a path and
    *         credit.
    */
@@ -169,7 +169,7 @@ public class LeadImage_Test extends TestObjectBase {
 
   /**
    * Retrieves a list of paths to pages which are expected to have no Lead Image
-   * 
+   *
    * @return An iterable list of one element arrays, containing a path
    */
   @DataProvider(name = "getPageWithoutLeadImage")

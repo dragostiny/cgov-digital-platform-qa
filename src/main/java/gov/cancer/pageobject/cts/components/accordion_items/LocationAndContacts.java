@@ -53,7 +53,15 @@ public class LocationAndContacts extends AccordionItem {
    * returns Select object of dropdown element
    */
   private void setStatesDropdown() {
-    statesDropdown = new Select(ElementHelper.findElement(body, STATE_DROPDOWN_LOCATOR));
+    //some trials offer an option to select country and state, some only available
+    //in US therefore only State dropdown is available
+    //we need to check how many dropdowns are present, and if there are two, pick the state(second)
+    List<WebElement> locationDropDowns = ElementHelper.findElements(body, STATE_DROPDOWN_LOCATOR);
+    if (locationDropDowns.size() == 1) {
+      statesDropdown = new Select(locationDropDowns.get(0));
+    } else {
+      statesDropdown = new Select(locationDropDowns.get(1));
+    }
   }
 
   /**
